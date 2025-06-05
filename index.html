@@ -9,35 +9,49 @@
     <div class="container-fluid p-4 bg-success-subtle text-black text-center funnyclass">
         <h1>Ian Backus' Landing Page</h1>
     </div>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Explore</a>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark-subtle">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Explore</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home</a>
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Work Experience</a>
+                <a class="nav-link" href="#">Work Experience</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Education</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#">Program Participation</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link" href="#">Program Participation</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Projects
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">Software</a>
-                    <a class="dropdown-item" href="#">Mechanical</a>
-                    </div>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Software</a></li>
+                    <li><a class="dropdown-item" href="#">Mechanical</a></li>
+                </ul>
                 </li>
             </ul>
+            </div>
         </div>
     </nav>
-    
-    
-
-
-    <script src="./bootstrap/js/bootstrap.min.js" />
+    <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+    Dropdown button
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+    <li><a class="dropdown-item" href="#">Action</a></li>
+    <li><a class="dropdown-item" href="#">Another action</a></li>
+    <li><a class="dropdown-item" href="#">Something else here</a></li>
+  </ul>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </body>
 </html>
